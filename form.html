@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="col-md-12">
+      <div class="col-md-4 formSection offset-4">
+        <form class="m-4 card card-body">
+          <div class="heading col-md-12 mb-3">
+            <h4 class="text-center">FILL FORM</h4>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter UserName"
+              name="username"
+              id="username",
+              onkeyup="checkOnInputChange()"
+            />
+          </div>
+          <div class="form-group mb-3">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter password"
+              name="password"
+              id="password"
+              onkeyup="checkOnInputChange()"
+            />
+          </div>
+          <div class="form-group mb-3 submitDiv">
+            <div class="col-md-6 offset-3">
+              <input
+                type="button"
+                class="form-control btn-primary"
+                name="submitBtn"
+                id="submitbtn"
+                value="Submit"
+                onclick="Validation()"
+              />
+            </div>
+          </div>
+
+          <div style="display:none" class="form-group submitError mb-3">
+            <div class="row">
+              <div class="col-md-6 submitErrorDiv1">
+                <input
+                  type="button"
+                  class="form-control btn-primary"
+                  name="submitBtn"
+                  id="submitbtn"
+                  value="Please fill Form"
+                />
+              </div>
+              <div class="col-md-6 offset-6 submitErrorDiv2">
+                <input
+                  type="button"
+                  class="form-control btn-primary"
+                  name="submitBtn"
+                  id="submitbtn"
+                  value="Please fill Form"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script defer src="formScript.js"></script>
+
+  </body>
+</html>
